@@ -33,7 +33,7 @@ def mail():
 		server = smtplib.SMTP( "smtp.gmail.com", 587 )
 		server.starttls()
 		server.login( 'email', 'pwd' )
-		server.sendmail( 'from', 'to', 'There is a link up for Archer, Episode ' + num )
+		server.sendmail( 'from', 'to', 'There is a link up for Archer, Episode ' + str(num) )
 
 
 if __name__ == "__main__":
